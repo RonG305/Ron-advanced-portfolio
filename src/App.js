@@ -4,7 +4,7 @@ import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App font-Inter text-blue-500 w-full bg-blue-950 ">
+    <div className="App font-Inter text-blue-500 w-full bg-slate-800 ">
       <div className=' w-[80%] m-auto'>
           <Header />
       </div>

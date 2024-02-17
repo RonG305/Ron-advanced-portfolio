@@ -53,10 +53,19 @@ const menuItems = [
 ]
 
 const Header = () => {
+
+    const headerStyles = {
+        mainContainer: ' bg-slate-800 flex items-center justify-between min-h-[70px] text-white',
+        logo: 'font-bold text-3xl',
+        listStyle: ' md:flex items-center justify-between gap-2' 
+    }
+
+
+    
   return (
-    <div className=' bg-blue-950 flex items-center justify-between min-h-[70px] text-white '>
-        <h3 className=' font-bold text-3xl'>Ronald</h3>
-        <div className=' flex items-center justify-between gap-2' style={{listStyle: 'none'}}>
+    <div className={headerStyles.mainContainer}>
+        <h3 className={headerStyles.logo}>Ronald</h3>
+        <div className={headerStyles.listStyle} style={{listStyle: 'none'}}>
             {menuItems.map((menuItem) => (
                 <li className=' '>{menuItem.linkName}</li>
             ))}
