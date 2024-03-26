@@ -1,77 +1,26 @@
 import React from 'react'
+import {FaBars} from 'react-icons/fa'
 
-
-const menuItems = [
-    {
-        linkName: 'home',
-        url: '/home'
-        
-    },
-
-    {
-        linkName: 'about',
-        url: '/about'
-        
-    },
-
-    {
-        linkName: 'resume',
-        url: '/resume'
-        
-    },
-
-    {
-        linkName: 'services',
-        url: '/services'
-        
-    },
-
-    {
-        linkName: 'skills',
-        url: '/skills'
-        
-    },
-
-    {
-        linkName: 'projects',
-        url: '/projects'
-        
-    },
-
-    {
-        linkName: 'blog',
-        url: '/blog'
-        
-    },
-
-    {
-        linkName: 'contact',
-        url: '/contact'
-        
-    },
-
-]
 
 const Header = () => {
 
     const headerStyles = {
-        mainContainer: ' bg-[#1B262C] flex items-center justify-between min-h-[70px] text-white',
-        logo: 'font-bold text-3xl',
+        wrapper: "fixed ",
+        mainContainer: ' flex items-center justify-between min-h-[70px] text-white ',
+        logo: 'font-bold text-3xl font-lobster text-purple-500',
         listStyle: ' md:flex items-center justify-between gap-2' 
     }
 
 
 
   return (
-    <div className={headerStyles.mainContainer}>
-        <h3 className={headerStyles.logo}>Ronald</h3>
-        <div className={headerStyles.listStyle} style={{listStyle: 'none'}}>
-            {menuItems.map((menuItem) => (
-                <li className=' hover:text-orange-600 cursor-pointer transition-all delay-300 '>{menuItem.linkName}</li>
-            ))}
+    <div className={headerStyles.wrapper}>
+        <div className={headerStyles.mainContainer}>
+            <h3 className={headerStyles.logo}>Ronald</h3>
+            <FaBars size={30} />
         </div>
-
     </div>
+    
   )
 }
 
