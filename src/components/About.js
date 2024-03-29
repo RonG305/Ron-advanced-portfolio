@@ -45,8 +45,7 @@ const About = () => {
     initial="hidden"
     whileInView="visible"
     id='about'
-
-      className=' md:h-[100vh] mb-5 h-fit '
+    className=' md:h-[100vh] mb-5 h-fit '
     >
       <h3 className=' text-center font-extrabold md:text-5xl text-3xl py-5'>About Me</h3>
 

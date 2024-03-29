@@ -31,7 +31,7 @@ const Contact = () => {
                 <div className=' bg-slate-700 w-fit p-4 rounded-full my-4'>{contact.icon}</div>
                 <p className=' font-bold py-2'>{contact.name.toUpperCase()}</p>
 
-                {contact.data === 'linked in'? <a href='https://www.linkedin.com/in/ronald-mutia-14019525a/' className=' px-3 py-1 bg-sky-500 rounded-sm w-fit hover:bg-slate-700'>linked in</a> : <p>{contact.data}</p> } 
+                {contact.data === 'linked in'? <a target='_blank' rel="noreferrer"  href='https://www.linkedin.com/in/ronald-mutia-14019525a/' className=' px-3 py-1 bg-sky-500 rounded-sm w-fit hover:bg-slate-700'>linked in</a> : <p>{contact.data}</p> } 
             </div>
             ))}
 

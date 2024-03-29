@@ -55,9 +55,9 @@ const Hero = () => {
        <img src={heroContent.heroImage} alt='developer ' />
 
        <div className=' flex gap-4'>
-          <p  className={heroContent.styles.socialStyle}><a href='https://www.linkedin.com/in/ronald-mutia-14019525a/'>Linked In</a></p>
-          <p className={heroContent.styles.socialStyle}><a href='https://www.instagram.com/rongmutia/'>instagram</a></p>
-          <p  className={heroContent.styles.socialStyle}><a blank="true" href='https://twitter.com/ronGcodewaves'>twitter</a></p>
+          <p  className={heroContent.styles.socialStyle}><a target='_blank' rel="noreferrer" href='https://www.linkedin.com/in/ronald-mutia-14019525a/'>Linked In</a></p>
+          <p className={heroContent.styles.socialStyle}><a  target='_blank' rel="noreferrer" href='https://www.instagram.com/rongmutia/'>instagram</a></p>
+          <p  className={heroContent.styles.socialStyle}><a  target='_blank' rel="noreferrer" blank="true" href='https://twitter.com/ronGcodewaves'>twitter</a></p>
           
        </div>
     </motion.div>
