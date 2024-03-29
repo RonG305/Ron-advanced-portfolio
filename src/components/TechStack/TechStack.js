@@ -1,6 +1,12 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 const TechStack = () => {
+
+    const variants = {
+        hidden: { opacity: 0, y: 200},
+        visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 }}
+      }
     
 
 
@@ -48,9 +54,17 @@ const TechStack = () => {
    
     
   return (
-    <div className='  lg:h-[50vh] py-5 '>
+    <motion.div
+
+    variants={variants}
+    initial="hidden"
+    whileInView="visible"
+    
+
+    id='tech-skills'
+    className='  lg:h-[100vh] py-5 flex flex-col items-center justify-center'>
         <div className=' flex flex-col items-center justify-center'>
-            <h3 className=' text-xl font-bold text-purple-500'>Technologies</h3>
+            <h3 className=' text-xl font-bold text-purple-500'>Tech Skills</h3>
             <p className=' font-extrabold  text-3xl text-center'>Technologies am expertised in and have been working with</p>
         </div>
         <div className=' flex gap-4 items-center justify-center flex-wrap my-5'>
@@ -63,7 +77,7 @@ const TechStack = () => {
                 </div>
             ))}
         </div>
-    </div>
+    </motion.div>
   )
 }
 

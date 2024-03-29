@@ -1,4 +1,15 @@
-.App {
-  
+.App::-webkit-scrollbar {
+    display: none;
+
 }
+
+.freelance {
+    
+    background:linear-gradient(0deg, rgba(120, 176, 219, 0.3), rgba(14, 180, 230, 0.3)), url('../public/images/freelance.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px 0;
+}
+
 

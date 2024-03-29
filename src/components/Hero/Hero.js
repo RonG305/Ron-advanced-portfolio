@@ -1,15 +1,20 @@
 import React from 'react'
-
-import {} from 'react-icons/fc'
+import {motion} from 'framer-motion'
 
 const Hero = () => {
+
+
+  const variants = {
+    hidden: { opacity: 0, y: -200},
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.5 }}
+  }
 
 
 
   const heroContent = {
 
     styles : {
-      constainerStyles: " h-full   flex flex-col items-center py-10",
+      constainerStyles: " md:h-[100vh]   flex flex-col items-center py-20",
       headerStlyles: "uppercase font-medium md:text-xl py-5",
       careerStyle: "md:text-6xl text-4xl font-extrabold my-3",
       nameTextStyle: "font-medium text-2xl text-purple-500",
@@ -33,7 +38,13 @@ const Hero = () => {
 
 
   return (
-    <div className={heroContent.styles.constainerStyles}>
+    <motion.div
+
+     variants={variants}
+     initial="hidden"
+     whileInView="visible"
+    id='hero'
+    className={heroContent.styles.constainerStyles}>
       <p className={heroContent.styles.headerStlyles}>
         {heroContent.textContent.headerText}
       </p>
@@ -44,12 +55,12 @@ const Hero = () => {
        <img src={heroContent.heroImage} alt='developer ' />
 
        <div className=' flex gap-4'>
-          <p className={heroContent.styles.socialStyle}>Linked In</p>
-          <p className={heroContent.styles.socialStyle}>instagram</p>
-          <p className={heroContent.styles.socialStyle}>twitter</p>
+          <p  className={heroContent.styles.socialStyle}><a href='https://www.linkedin.com/in/ronald-mutia-14019525a/'>Linked In</a></p>
+          <p className={heroContent.styles.socialStyle}><a href='https://www.instagram.com/rongmutia/'>instagram</a></p>
+          <p  className={heroContent.styles.socialStyle}><a blank="true" href='https://twitter.com/ronGcodewaves'>twitter</a></p>
           
        </div>
-    </div>
+    </motion.div>
   )
 }
 
