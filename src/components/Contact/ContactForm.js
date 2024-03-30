@@ -9,7 +9,7 @@ const ContactForm = () => {
         <div className='lg:w-1/2 flex flex-col bg-slate-100 p-4 rounded-md'>
             <input
               placeholder=' Your Name'
-              className={styles.inputStyle}
+              className=' border border-gray-300 rounded-sm p-2 bg-white mb-2 outline-sky-500  text-gray-700'
             />
 
              <input
