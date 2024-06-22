@@ -1,30 +1,30 @@
 export const projectsData = [
     {
-        projectName: "Netflix Clone",
-        projectDescription: "Using latest technologies, I have managed to build a netflix clone which is a movie streaming platform, I have used my creativity to build its UI and rendered functionality well.",
+        projectName: "KMET application",
+        projectDescription: "During my internship at Affam Limited since Auguts 2023, I have built several applications, with my proudest achievement being the Kmet application for medical health providers. I successfully developed and optimized this application using Redis to handle large volumes of data efficiently. I am eager to leverage my expertise in crafting high-quality software solutions.",
 
-        technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Tailwind CSS"}, {name: "TMDB API"}],
-        displayImage: './images/project2.png'
+        technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Boostrap CSS"}, {name: "Postgres"}, {name: "DjangoRest API"}, {name: "Python"},],
+        displayImage: './images/kmet.png'
 
         
     },
 
     {
-        projectName: "Real estate Application",
-        projectDescription: "I this knowledge, I incoporated knowledge of Reactjs , Tailwind CSS and  Django Rest framework to come up with an application where user can view assets being sold by real estate agents and request for a tour before doing any business transaction.",
+        projectName: "Medswift application",
+        projectDescription: "Medswift is a web application designed to streamline the ordering and delivery process of pharmaceutical products. It digitizes the purchasing experience, eliminating the hussle to physically visit a pharmacy for medical product purchases.",
+
+        technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Tailwind CSS"}, {name: "DjangoRest API"}, {name: "Python"}, {name:"Django"}, {name: "Redis"}],
+        displayImage: './images/medswift.png'
+
+        
+    },
+
+    {
+        projectName: "Code-connect application",
+        projectDescription: "Throughout my university education in the past three years i have realized that we are not provided with the platform within the school and outside to learn from each other . This has trigered me to build code connect for us all students in computing to come together and elevate our skills through learning from each other. #Lets connect, Lets project",
 
         technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Tailwind CSS"}, {name: "DjangoRest API"}, {name: "Python"}, {name:"Django"}],
-        displayImage: './images/project3.png'
-
-        
-    },
-
-    {
-        projectName: "KMET application",
-        projectDescription: "This is an affam company application which have been building over 6 months now. It is an application which aims at collecting data from different clinical facilities in different counties and performing analysis using power BI. It  has enabled me to upgrade my skills in application design and development",
-
-        technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Tailwind CSS"}, {name: "DjangoRest API"}, {name: "Python"}, {name:"Django"}, {name: 'React-MDB'}],
-        displayImage: './images/project4.png'
+        displayImage: './images/codeconnect.png'
 
         
     },
@@ -40,11 +40,11 @@ export const projectsData = [
     },
 
     {
-        projectName: "Mobile App Advert Website",
-        projectDescription: "I build this website to act as an advertising as well as a documentation to an hospital mobile application which is aimed to help patients and other people have streamlined medical services with only a single click of their phone.",
+        projectName: "e-health",
+        projectDescription: "Am currently building an e-health platform to streamline hospital staff - patient workload through digitizing hospital activities. It will help patients to get a dignified services from hospitals, and hospital management to handle their work and patients records, data and medicine with ease. ",
 
         technologies: [{name:"Javascript"}, {name: "React Js"}, {name: "Tailwind CSS"}, {name: "TMDB API"}],
-        displayImage: './images/project1.png'
+        displayImage: './images/e-health.png'
 
         
     }
